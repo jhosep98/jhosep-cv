@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.7rem;
+  .header__title {
+    background-color: $font-color-primary;
+    text-align: center;
+    padding: 0.9rem 2rem;
+    border-radius: 10px;
+    p {
+      color: $container-bgcolor;
+    }
+    .header__image {
+      margin-top: -180px;
+      img {
+        width: 200px;
+        border-radius: 50%;
+      }
+    }
+  }
+  .header__nav {
+    p {
+      color: $font-color-primary;
+      font-weight: 900;
+      font-size: 18px;
+    }
+    nav {
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+          margin: 0.9rem 0;
+          span {
+            display: block;
+            text-transform: capitalize;
+            margin-bottom: 0.3rem;
+          }
+          a {
+            color: $font-color-secondary;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

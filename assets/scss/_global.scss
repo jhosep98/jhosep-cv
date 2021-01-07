@@ -11,3 +11,14 @@ img {
 body {
   background: $background-color-body;
 }
+
+#root {
+  background: $background-color-cv;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 250px 1rem 0 1rem;
+  border: 2px solid $font-color-primary;
+}
