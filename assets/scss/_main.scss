@@ -1,0 +1,75 @@
+.main {
+  display: flex;
+  .main__profile {
+    width: 50%;
+    margin: 1rem;
+    .main__personal {
+      background: $container-bgcolor;
+      padding: 1rem 1rem 3rem 1rem;
+      border-radius: 20px;
+      h3 {
+        color: $font-color-primary;
+      }
+      p {
+        color: $font-color-secondary;
+      }
+    }
+    .main__education {
+      background: $container-bgcolor;
+      padding: 1rem 1rem 3rem 1rem;
+      border-radius: 20px;
+      margin-top: 2rem;
+      h3 {
+        color: $font-color-primary;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 500;
+      }
+      ul {
+        color: $font-color-secondary;
+      }
+    }
+  }
+  .main__summary {
+    width: 50%;
+    margin: 1rem;
+    .main__projects {
+      background: $container-bgcolor;
+      padding: 1rem 1rem 3rem 1rem;
+      border-radius: 20px;
+      h3 {
+        color: $font-color-primary;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      ul {
+        color: $font-color-secondary;
+        a {
+          text-decoration: none;
+          li {
+            color: $font-color-secondary;
+          }
+        }
+      }
+    }
+    .main__skills {
+      background: $container-bgcolor;
+      padding: 1rem 1rem 3rem 1rem;
+      border-radius: 20px;
+      margin-top: 2rem;
+      h3 {
+        color: $font-color-primary;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      span {
+        color: $font-color-secondary;
+      }
+    }
+  }
+}
