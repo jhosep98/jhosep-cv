@@ -2,5 +2,19 @@ $background-color-body: #edf0f2;
 $background-color-cv: #efefef;
 $container-bgcolor: #fff;
 $default-font-color: #000;
-$font-color-primary: #38b6ff;
+$font-color-primary: #ff7948;
 $font-color-secondary: #5b5e66;
+$mobile: 600px;
+$tablet: 900px;
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}

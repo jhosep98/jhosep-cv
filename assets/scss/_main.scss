@@ -1,8 +1,23 @@
 .main {
   display: flex;
+  width: 60%;
+  @include tablet {
+    width: 100%;
+  }
+  @include mobile {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
   .main__profile {
     width: 50%;
     margin: 1rem;
+    @include tablet {
+      width: 100%;
+    }
+    @include mobile {
+      width: 100%;
+    }
     .main__personal {
       background: $container-bgcolor;
       padding: 1rem 1rem 3rem 1rem;
@@ -28,12 +43,21 @@
       }
       ul {
         color: $font-color-secondary;
+        li {
+          margin-top: 0.7rem;
+        }
       }
     }
   }
   .main__summary {
     width: 50%;
     margin: 1rem;
+    @include tablet {
+      width: 100%;
+    }
+    @include mobile {
+      width: 100%;
+    }
     .main__projects {
       background: $container-bgcolor;
       padding: 1rem 1rem 3rem 1rem;
@@ -47,10 +71,14 @@
       }
       ul {
         color: $font-color-secondary;
+        li {
+          margin-top: 0.7rem;
+        }
         a {
           text-decoration: none;
           li {
             color: $font-color-secondary;
+            margin-top: 0.7rem;
           }
         }
       }
